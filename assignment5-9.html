@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<p id="content">"You can come up with a sentence","javascript"</p>
+<button onClick="change()">ClickHere</button>
+<script>
+    function change(){
+        var str = document.getElementById("content").innerHTML;
+        document.getElementById("content").innerHTML= str.replace(str,"Hello World");
+    }
+</script>
+</body>
+</html>

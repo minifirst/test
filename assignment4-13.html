@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<p>NUMBER:<input type="text" id="content"></p>
+<button onClick="check()">CLICK HERE</button>
+<h3 id="result"></h3>
+<script>
+confirm("Pick a number from 6 to 10");
+function check(){
+	var a = document.getElementById("content").value;
+	if (a > 5 && a < 11){
+		document.getElementById("result").innerHTML= "It's a proper number.";
+	}
+	else {
+		alert("Wrong Chioce");
+	}
+}
+</script>
+</body>
+</html>
